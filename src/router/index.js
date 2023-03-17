@@ -58,6 +58,11 @@ export const constantRoutes = [
     hidden: true
   },
   {
+    path: '/testmanagement/cab/list',
+    component: () => import('@/views/testmanagement/cab/index'),
+    hidden: true
+  },
+  {
     path: '',
     component: Layout,
     redirect: '/index',
