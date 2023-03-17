@@ -5,6 +5,9 @@ import {parseStrEmpty} from "@/utils/ruoyi";
 export function listCab(query) {
     return request({
         url: '/testmanagement/cab/list',
+        headers: {
+            isToken: false
+        },
         method: 'get',
         params: query
     })
@@ -49,7 +52,7 @@ export function delCab(cabId) {
 // 修改cab状态
 export function changeCabStatus(cabId, status) {
     const data = {
-        userId,
+        cabId,
         status
     }
     return request({
