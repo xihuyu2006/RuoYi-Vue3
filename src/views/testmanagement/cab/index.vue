@@ -5,7 +5,7 @@
       <!--CAB数据-->
       <el-col :span="20" :xs="24">
         <el-form :model="queryParams" ref="queryRef" :inline="true" v-show="showSearch" label-width="72px">
-          <el-form-item label="CAB名称" prop="cabName">  <!-- prop是用来校验的，在cab里没有用到 -->
+          <el-form-item label="CAB名称" prop="cabName">  <!-- 这里的prop是用来校验的，在cab里没有用到 -->
             <el-input
                 v-model="queryParams.cabName"
                 placeholder="请输入CAB名称"
